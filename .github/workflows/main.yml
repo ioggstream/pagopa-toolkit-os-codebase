@@ -21,4 +21,4 @@ jobs:
       with:
         java-version: 11
     - name: Build with Maven
-      run: mvn -B package
+      run: mvn -B org.owasp:dependency-check-maven:check -Dmaven.test.skip=true
